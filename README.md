@@ -1,12 +1,25 @@
-### WS-Delete-Old-Projects
+[![Logo](https://whitesource-resources.s3.amazonaws.com/ws-sig-images/Whitesource_Logo_178x44.png)](https://www.whitesourcesoftware.com/)  
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This is a tool created by WhiteSource Support, to easily delete all projects in an organization older than a certain amount of days. 
+# [Mend Delete Old Projects Tool](https://github.com/kyallanum-MND/MND-Delete-Old-Projects)
+This tool allows you to extract all of the policies a user owns.
 
-To run, you will need Python installed. From there you just need to:
+## Prerequisites
+* Python 3.6+
 
+## Installation and Execution by cloning this repo:
+1. Clone the repo:
+```shell
+git clone https://github.com/kyallanum-MND/MND-Delete-Old-Projects.git
 ```
-$> pip install -r requirements.txt
-$> python init.py
+
+2. Run setup.py
+```shell
+cd MND-Delet-Old-Projects
+python -m pip install -e .
 ```
 
-The concept behind this is that it will get every single product and project in your organization, and then delete every single project that has a creation date older than "x" amount of days.
+3. Execution
+```shell
+mnd_delete_old_projects
+```
